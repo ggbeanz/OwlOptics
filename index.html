@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gimbaled Optical Sensor System</title>
+        <meta
+            name="description"
+            content="A compact prototype for stabilized long-range aerial tracking and reconnaissance."
+        />
+        <link
+            rel="shortcut icon"
+            href="./assets/logo/logo.png"
+            type="image/x-icon"
+        />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:title" content="Gimbaled Optical Sensor System" />
+        <meta
+            property="og:description"
+            content="A compact prototype for stabilized long-range aerial tracking and reconnaissance."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://OwlOptics.com" />
+        <meta property="og:image" content="./assets/images/preview.png" />
+
+        <link rel="stylesheet" href="./css/tailwind-build.css" />
+        <link rel="stylesheet" href="css/index.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+            integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-black tw-text-white">
+        <header
+            class="tw-max-w-lg:tw-px-4 tw-max-w-lg:tw-mr-auto tw-absolute tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-bg-opacity-0 tw-px-[5%] lg:tw-justify-around"
+        >
+            <a class="tw-h-[80px] tw-w-[0px] tw-p-[4px]" href="#hero-section">
+                <img
+                    src="./assets/logo/logo.png"
+                    alt="GOS logo"
+                    class="tw-h-full tw-w-full tw-object-contain"
+                />
+            </a>
+            <div
+                class="collapsible-header animated-collapse max-lg:tw-shadow-md"
+                id="collapsed-header-items"
+            >
+                <div
+                    class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center"
+                >
+                    <a class="header-links" href="#overview"> Overview </a>
+                    <a class="header-links" href="#mission"> Mission </a>
+                    <a class="header-links" href="#final-prototype"> Final Prototype </a>
+                    <a class="header-links" href="#earlier-prototypes"> Earlier Prototypes </a>
+                    <a class="header-links" href="#features"> Features </a>
+                    <a class="header-links" href="#gallery"> Gallery </a>
+                    <a class="header-links" href="#team"> Team </a>
+                </div>
+                <div
+                    class="tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center"
+                >
+                    <a
+                        href="#contact"
+                        aria-label="contact"
+                        class="tw-rounded-full tw-bg-white tw-px-3 tw-py-2 tw-text-black tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2"
+                    >
+                        <span>Contact</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <button
+                class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-white lg:tw-hidden"
+                onclick="toggleHeader()"
+                aria-label="menu"
+                id="collapse-btn"
+            ></button>
+        </header>
+
+        <section
+            class="hero-section tw-relative tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-md:tw-mt-[50px]"
+            id="hero-section"
+        >
+            <div
+                class="tw-flex tw-h-full tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-gap-6 tw-p-[5%] max-xl:tw-place-items-center max-lg:tw-p-4"
+            >
+                <div class="tw-flex tw-flex-col tw-place-content-center tw-items-center">
+                    <div
+                        class="reveal-up gradient-text tw-text-center tw-text-6xl tw-font-semibold tw-uppercase tw-leading-[80px] max-lg:tw-text-4xl max-md:tw-leading-snug"
+                    >
+                        <span> Gimbaled Optical </span>
+                        <br />
+                        <span> Sensor System </span>
+                    </div>
+                    <div
+                        class="reveal-up tw-mt-10 tw-max-w-[650px] tw-p-2 tw-text-center tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        A compact system for stabilized long-range aerial tracking and reconnaissance.
+                    </div>
+
+                    <div class="reveal-up tw-mt-10 tw-flex tw-place-items-center tw-gap-4">
+                        <a
+                            class="btn !tw-bg-[#27F5D3] !tw-shadow-[#27F5D3] tw-text-black tw-shadow-lg tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]"
+                            href="#overview"
+                        >
+                            View overview
+                        </a>
+                        <a
+                            class="btn tw-flex tw-gap-2 !tw-bg-black !tw-text-white tw-transition-colors tw-duration-[0.3s] hover:!tw-bg-white hover:!tw-text-black"
+                            href="#final-prototype"
+                        >
+                            <i class="bi bi-play-circle-fill"></i>
+                            <span>See prototype</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="reveal-up tw-relative tw-mt-8 tw-flex tw-w-full tw-place-content-center tw-place-items-center"
+                    id="dashboard-container"
+                >
+                    <div
+                        class="tw-relative tw-max-w-[80%] tw-overflow-hidden tw-rounded-xl tw-bg-transparent max-md:tw-max-w-full"
+                        id="dashboard"
+                    >
+                    <!-- change this image to something from the final prototype testing -->
+                        <img
+                            src="./assets/images/home/beta_sideview.jpg"
+                            alt="prototype preview"
+                            class="tw-h-full tw-w-full tw-object-cover tw-opacity-90 max-lg:tw-object-contain"
+                        />
+                    </div>
+
+                    <div
+                        class="hero-img-bg-grad tw-absolute tw-left-[20%] tw-top-5 tw-h-[200px] tw-w-[200px]"
+                    ></div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-8"
+            id="overview"
+        >
+            <div class="tw-mt-8 tw-flex tw-flex-col tw-place-items-center tw-gap-5">
+                <div class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center">
+                    <h2 class="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-3xl">
+                        Project Overview
+                    </h2>
+                    <p class="tw-max-w-[800px] tw-text-gray-300">
+                        This project focuses on the design and development of a compact, lightweight gimbaled optical 
+                        sensor system capable of tracking a 25 centimeter target at a distance of 1 kilometer. The system integrates 
+                        computer vision tracking, precise motor control, and optimized power usage to achieve accurate 
+                        long-range performance in a compact form factor.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+            id="mission"
+        >
+            <div class="tw-mt-8 tw-flex tw-flex-col tw-place-items-center tw-gap-5">
+                <div class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center">
+                    <h2 class="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-3xl">
+                        Our Mission
+                    </h2>
+                    <p class="tw-max-w-[900px] tw-text-gray-300">
+                        Our mission is to engineer a compact and power-efficient gimbaled optical sensor system capable 
+                        of high-precision long-range tracking, while minimizing the size, weight, power, and cost constraints 
+                        associated with conventional systems.
+
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+        >
+            <div class="tw-mt-4 tw-flex tw-w-full tw-flex-col tw-place-items-center tw-gap-4">
+                <div class="reveal-up tw-text-center tw-text-2xl tw-font-medium tw-text-gray-200 max-md:tw-text-xl">
+                    Sponsored by Siemens
+                </div>
+                <div class="reveal-up tw-flex tw-place-content-center">
+                    <img
+                        src="./assets/images/siemenslogo.png"
+                        alt="Siemens logo"
+                        class="tw-h-auto tw-w-[200px] tw-object-contain"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <!--FINAL PROTOTYPE SECTION-->
+        <section
+            class="tw-relative tw-flex tw-min-h-[80vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+            id="final-prototype"
+        >
+        <!--change this image to an image of the final prototype-->
+            <div class="reveal-up tw-flex tw-min-h-[60vh] tw-place-content-center tw-place-items-center tw-gap-[10%] max-lg:tw-flex-col max-lg:tw-gap-10">
+                <div class="tw-flex">
+                    <div class="tw-max-h-[650px] tw-max-w-[850px] tw-overflow-hidden tw-rounded-lg">                        
+                        <img
+                            src="./assets/images/home/beta_tracking.jpg"
+                            alt="final prototype image"
+                            class="tw-h-full tw-w-full tw-object-cover"
+                        />
+                    </div>
+                </div>
+                <div class="tw-mt-6 tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4">
+                    <h3 class="tw-text-4xl tw-font-medium max-md:tw-text-2xl">
+                        Final Prototype
+                    </h3>
+
+                    <!--change description for these-->
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            <i class="bi bi-check-all !tw-text-2xl"></i>
+                            Mechanical gimbal frame
+                        </h4>
+                        <span class="tw-text-lg tw-text-gray-300 max-md:tw-text-base">
+                            Supports the sensor and allows controlled pitch and yaw movement.
+                        </span>
+                    </div>
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            <i class="bi bi-check-all !tw-text-2xl"></i>
+                            Motor and control integration
+                        </h4>
+                        <span class="tw-text-lg tw-text-gray-300 max-md:tw-text-base">
+                            Combines hardware motion with software tracking inputs for precise
+                            alignment.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-min-h-[80vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+            id="earlier-prototypes"
+        >
+            <div class="tw-mt-8 tw-flex tw-w-full tw-flex-col tw-place-items-center tw-gap-5">
+                <div class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center">
+                    <h2 class="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-3xl">
+                        Earlier Prototypes
+                    </h2>
+                    <p class="tw-max-w-[900px] tw-text-gray-300">
+                        A quick look at the development path leading to the final prototype.
+                    </p>
+                </div>
+                <!--ALPHA PROTOTYPE SECTION-->
+                <div class="tw-mt-6 tw-grid tw-w-full tw-max-w-[1200px] tw-grid-cols-1 tw-gap-8 lg:tw-grid-cols-2">
+                    <div class="tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-6">
+                        <h3 class="tw-text-3xl tw-font-medium tw-text-gray-200">Alpha Prototype</h3>
+                        <p class="tw-mt-4 tw-text-gray-300">
+                            The Alpha Prototype displayed our initial proof of concept for the GOS.
+                        </p>
+                        
+                        <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+
+                <div>
+                    <h4 class="tw-text-xl tw-font-medium">
+                        <i class="bi bi-check-all !tw-text-2xl tw-text-[#27F5D3]"></i>
+                        Gear-driven yaw validation
+                    </h4>
+                    <span class="tw-text-gray-300">
+                        Verified rotational motion through the gear system.
+                    </span>
+                </div>
+
+                <div>
+                    <h4 class="tw-text-xl tw-font-medium">
+                        <i class="bi bi-check-all !tw-text-2xl tw-text-[#27F5D3]"></i>
+                        Mechanical structure testing
+                    </h4>
+                    <span class="tw-text-gray-300">
+                        Confirmed basic gimbal structure and alignment.
+                    </span>
+                </div>
+
+                <div>
+                    <h4 class="tw-text-xl tw-font-medium">
+                        <i class="bi bi-check-all !tw-text-2xl tw-text-[#27F5D3]"></i>
+                        Early detection capability
+                    </h4>
+                    <span class="tw-text-gray-300">
+                        Achieved initial object detection with limited accuracy.
+                    </span>
+                </div>
+
+                <div>
+                    <h4 class="tw-text-xl tw-font-medium">
+                        <i class="bi bi-check-all !tw-text-2xl tw-text-[#27F5D3]"></i>
+                        Identified system limitations
+                    </h4>
+                    <span class="tw-text-gray-300">
+                        Observed issues in stability, precision, and tracking.
+                    </span>
+                </div>
+
+            </div>
+
+                        <div class="tw-mt-4 tw-grid tw-grid-cols-1 tw-gap-4 md:tw-grid-cols-2">
+                            <div class="tw-flex tw-h-[180px] tw-items-center tw-justify-center tw-rounded-md tw-border tw-border-dashed tw-border-gray-500 tw-text-gray-400">Alpha photo 1</div>
+                            <div class="tw-flex tw-h-[180px] tw-items-center tw-justify-center tw-rounded-md tw-border tw-border-dashed tw-border-gray-500 tw-text-gray-400">Alpha photo 2</div>
+                        </div>
+                    </div>
+        <!--BETA PROTOTYPE SECTION-->
+        <div class="tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-6">
+            <h3 class="tw-text-3xl tw-font-medium tw-text-gray-200">Beta Prototype</h3>
+
+            <p class="tw-mt-4 tw-text-gray-300">
+                The Beta Prototype represents the first fully integrated system, combining hardware and software.
+            </p>
+
+            <div class="tw-mt-6 tw-space-y-8">
+
+                <!-- System Integration -->
+                <div>
+                    <h4 class="tw-text-xl tw-font-medium tw-text-gray-200">System Integration</h4>
+
+                    <div class="tw-mt-2 tw-flex tw-flex-col tw-gap-3">
+                        <div>
+                            <i class="bi bi-check-all !tw-text-2xl tw-text-[#27F5D3]"></i>
+                            Fully integrated pitch and yaw control
+                        </div>
+
+                        <div>
+                            <i class="bi bi-check-all !tw-text-2xl tw-text-[#27F5D3]"></i>
+                            Improved mechanical alignment and rigidity
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Motor and Electrical Performance -->
+                <div>
+                    <h4 class="tw-text-xl tw-font-medium tw-text-gray-200">Motor and Electrical Performance</h4>
+
+                    <div class="tw-mt-2 tw-flex tw-flex-col tw-gap-3">
+                        <div>
+                            <i class="bi bi-check-all !tw-text-2xl tw-text-[#27F5D3]"></i>
+                            Both motors operated simultaneously
+                        </div>
+
+                        <div>
+                            <i class="bi bi-check-all !tw-text-2xl tw-text-[#27F5D3]"></i>
+                            Identified jitter and overshoot issues
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Real-Time Tracking -->
+                <div>
+                    <h4 class="tw-text-xl tw-font-medium tw-text-gray-200">Real-Time Tracking</h4>
+
+                    <div class="tw-mt-2 tw-flex tw-flex-col tw-gap-3">
+                        <div>
+                            <i class="bi bi-check-all !tw-text-2xl tw-text-[#27F5D3]"></i>
+                            Live tracking on Jetson Orin Nano
+                        </div>
+
+                        <div>
+                            <i class="bi bi-check-all !tw-text-2xl tw-text-[#27F5D3]"></i>
+                            ROI tracking and digital zoom improvements
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="tw-mt-4 tw-grid tw-grid-cols-1 tw-gap-4 md:tw-grid-cols-2">
+                <div class="tw-h-[120px] tw-w-[250px] tw-overflow-hidden tw-rounded-md">
+                    <img
+                        src="./assets/images/home/gos_beta.png"
+                        alt="Beta Prototype view 1"
+                        class="tw-h-full tw-w-full tw-object-cover"
+                    />
+                </div>
+                    
+                <div class="tw-h-[180px] tw-w-full tw-overflow-hidden tw-rounded-md">
+                    <img
+                        src="./assets/images/home/gos_beta_2.jpg"
+                        alt="Beta Prototype view 2"
+                        class="tw-h-full tw-w-full tw-object-cover"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+            id="features"
+        >
+            <div class="tw-mt-8 tw-flex tw-flex-col tw-place-items-center tw-gap-5">
+                <div class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center">
+                    <h2 class="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-3xl">
+                        Key benefits
+                    </h2>
+                </div>
+                <div class="tw-mt-6 tw-flex tw-max-w-[80%] tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col">
+                    <div class="reveal-up tw-flex tw-h-[400px] tw-w-[450px] tw-flex-col tw-gap-3 tw-text-center max-md:tw-w-[320px]">
+                        <div class="border-gradient tw-h-[200px] tw-w-full tw-overflow-hidden max-md:tw-h-[150px]">
+                            <div class="tw-flex tw-h-full tw-w-full tw-place-content-center tw-place-items-end tw-p-2">
+                                <i class="bi bi-bullseye tw-text-7xl tw-text-gray-200 max-md:tw-text-5xl"></i>
+                            </div>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-4 tw-p-2">
+                            <h3 class="tw-mt-8 tw-text-2xl tw-font-normal max-md:tw-text-xl">
+                                Precise targeting
+                            </h3>
+                            <div class="tw-text-gray-300">
+                                Designed to keep a sensor aligned with a target using controlled
+                                motion and stabilization.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reveal-up tw-flex tw-h-[400px] tw-w-[450px] tw-flex-col tw-gap-3 tw-text-center max-md:tw-w-[320px]">
+                        <div class="border-gradient tw-h-[200px] tw-w-full tw-overflow-hidden max-md:tw:h-[150px]">
+                            <div class="tw-flex tw-h-full tw-w-full tw-place-content-center tw-place-items-end tw-p-2">
+                                <i class="bi bi-arrows-angle-contract tw-text-7xl tw-text-gray-200 max-md:tw-text-5xl"></i>
+                            </div>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-4 tw-p-2">
+                            <h3 class="tw-mt-8 tw-text-2xl tw-font-normal max-md:tw-text-xl">
+                                Compact system design
+                            </h3>
+                            <div class="tw-text-gray-300">
+                                Built to stay lightweight and practical for prototype testing and
+                                integration.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reveal-up tw-flex tw-h-[400px] tw-w-[450px] tw-flex-col tw-gap-3 tw-text-center max-md:tw-w-[320px]">
+                        <div class="border-gradient tw-h-[200px] tw-w-full tw-overflow-hidden max-md:tw-h-[150px]">
+                            <div class="tw-flex tw-h-full tw-w-full tw-place-content-center tw-place-items-end tw-p-2">
+                                <i class="bi bi-gear-fill tw-text-7xl tw-text-gray-200 max-md:tw-text-5xl"></i>
+                            </div>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-4 tw-p-2">
+                            <h3 class="tw-mt-8 tw-text-2xl tw-font-normal max-md:tw-text-xl">
+                                Controlled motion
+                            </h3>
+                            <div class="tw-text-gray-300">
+                                Uses pitch and yaw movement to guide the sensor while keeping the
+                                view stable.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-min-h-[80vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+            id="gallery"
+        >
+            <div class="tw-mt-8 tw-flex tw-w-full tw-flex-col tw-place-items-center tw-gap-5">
+                <div class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center">
+                    <h2 class="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-3xl">
+                        Gallery
+                    </h2>
+                    <p class="tw-max-w-[900px] tw-text-gray-300">
+                        Add photos and videos here to document testing, build progress, and live demonstrations.
+                    </p>
+                </div>
+
+                <div class="tw-mt-6 tw-grid tw-w-full tw-max-w-[1200px] tw-grid-cols-1 tw-gap-6 md:tw-grid-cols-2 xl:tw-grid-cols-3">
+                    <div class="tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4">
+                        <div class="tw-flex tw-h-[220px] tw-w-full tw-items-center tw-justify-center tw-rounded-md tw-border tw-border-dashed tw-border-gray-500 tw-text-gray-400">
+                            Add image 1
+                        </div>
+                    </div>
+                    <div class="tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4">
+                        <div class="tw-flex tw-h-[220px] tw-w-full tw-items-center tw-justify-center tw-rounded-md tw-border tw-border-dashed tw-border-gray-500 tw-text-gray-400">
+                            Add image or video 2
+                        </div>
+                    </div>
+                    <div class="tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4">
+                        <div class="tw-flex tw-h-[220px] tw-w-full tw-items-center tw-justify-center tw-rounded-md tw-border tw-border-dashed tw-border-gray-500 tw-text-gray-400">
+                            Add image or video 3
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-mt-5 tw-flex tw-w-full tw-flex-col tw-place-items-center tw-p-[2%]"
+            id="team"
+        >
+            <h3 class="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-2xl">
+                Meet Our Team
+            </h3>
+            <div
+                class="tw-mt-8 tw-gap-10 tw-space-y-8 max-md:tw-columns-1 lg:tw-columns-2 xl:tw-columns-2"
+            >
+                <div class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]">
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        Handled circuit design and implementation, and powering the overall system. Developed team website.
+                    </p>
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full">
+                            <img src="./assets/images/people/adamo.png" class="tw-h-full tw-w-full tw-object-cover" alt="Gianna Adamo" />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Gianna Adamo</div>
+                            <div class="tw-text-gray-400">Electrical Engineering with a concentration in Power Engineering.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]">
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        Responsible for our computer vision algorithms, full system integration.
+                    </p>
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full">
+                            <img src="./assets/images/people/barbi.png" class="tw-h-full tw-w-full tw-object-cover" alt="James Barbi" />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">James Barbi</div>
+                            <div class="tw-text-gray-400">Computer Science with a concentration in Application Development.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]">
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        Responsible for mechanical design and assembly.
+                    </p>
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full">
+                            <img src="./assets/images/people/fair.png" class="tw-h-full tw-w-full tw-object-cover" alt="Andrew Fair" />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Andrew Fair</div>
+                            <div class="tw-text-gray-400">Mechanical Engineering</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]">
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        Responsible for mechanical design and assembly.
+                    </p>
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full">
+                            <img src="./assets/images/people/jones.png" class="tw-h-full tw-w-full tw-object-cover" alt="Travis Jones" />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Travis Jones</div>
+                            <div class="tw-text-gray-400">Mechanical Engineering Co-op with a concentration in Aerospace Engineering.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]">
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        Responsible for mechanical design and assembly.
+                    </p>
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full">
+                            <img src="./assets/images/people/Roche.png" class="tw-h-full tw-w-full tw-object-cover" alt="Daniel Roche" />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Daniel Roche</div>
+                            <div class="tw-text-gray-400">Mechanical Engineering</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]">
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        Responsible for mechanical design and assembly.
+                    </p>
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full">
+                            <img src="./assets/images/people/Smith.png" class="tw-h-full tw-w-full tw-object-cover" alt="Connor Smith" />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Connor Smith</div>
+                            <div class="tw-text-gray-400">Mechanical Engineering</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-p-[5%] tw-px-[10%]"
+            id="faq"
+        >
+            <h3 class="tw-text-4xl tw-font-medium tw-text-gray-300 max-md:tw-text-2xl">
+                FAQ
+            </h3>
+            <div class="tw-mt-5 tw-flex tw-min-h-[300px] tw-w-full tw-max-w-[850px] tw-flex-col tw-gap-4">
+                <div class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]">
+                    <div class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg">
+                        <span>What does the prototype do?</span>
+                        <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
+                    </div>
+                    <div class="content">
+                        It stabilizes and directs an optical sensor using controlled gimbal
+                        motion.
+                    </div>
+                </div>
+
+                <div class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]">
+                    <div class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg">
+                        <span>What is the current focus?</span>
+                        <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
+                    </div>
+                    <div class="content">
+                        Improving tracking stability, calibration, and overall hardware/software
+                        integration.
+                    </div>
+                </div>
+
+                <div class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]">
+                    <div class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg">
+                        <span>What should visitors expect here?</span>
+                        <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
+                    </div>
+                    <div class="content">
+                        A project overview, prototype photos, team information, and development
+                        progress.
+                    </div>
+                </div>
+            </div>
+
+            <div class="tw-mt-20 tw-flex tw-flex-col tw-place-items-center tw-gap-4" id="contact">
+                <div class="tw-text-3xl max-md:tw-text-2xl">Still have questions?</div>
+                <a
+                    href="mailto:gadamo@stevens.edu"
+                    class="btn !tw-rounded-full !tw-border-[1px] !tw-border-solid !tw-border-gray-300 !tw-bg-transparent tw-transition-colors tw-duration-[0.3s]"
+                >
+                    Contact
+                </a>
+            </div>
+        </section>
+
+        <footer
+            class="tw-mt-auto tw-flex tw-w-full tw-place-content-around tw-gap-3 tw-p-[5%] tw-px-[10%] tw-text-white max-md:tw-flex-col"
+        >
+            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-w-full">
+                <img
+                    src="./assets/logo/logo.png"
+                    alt="logo"
+                    class="tw-max-w-[120px]"
+                />
+                <div class="tw-text-center">
+                    Gimbaled Optical Sensor System
+                    <br />
+                    Prototype Project
+                </div>
+                <div class="tw-mt-3 tw-text-lg tw-font-semibold">Follow us</div>
+                <div class="tw-flex tw-gap-4 tw-text-2xl">
+                    <a href="https://github.com/your-repo" aria-label="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="mailto:your-email@example.com" aria-label="Email">
+                        <i class="bi bi-envelope-fill"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
+                <h2 class="tw-text-3xl max-md:tw-text-xl">Project</h2>
+                <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                    <a href="#overview" class="footer-link">Overview</a>
+                    <a href="#mission" class="footer-link">Mission</a>
+                    <a href="#final-prototype" class="footer-link">Final Prototype</a>
+                    <a href="#earlier-prototypes" class="footer-link">Earlier Prototypes</a>
+                    <a href="#features" class="footer-link">Features</a>
+                    <a href="#gallery" class="footer-link">Gallery</a>
+                    <a href="#team" class="footer-link">Team</a>
+                </div>
+            </div>
+
+            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
+                <h2 class="tw-text-3xl max-md:tw-text-xl">Resources</h2>
+                <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                    <a href="#faq" class="footer-link">FAQ</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                    <a href="#hero-section" class="footer-link">Back to top</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"
+        integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"
+        integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./index.js"></script>
+</html>
