@@ -81,9 +81,7 @@ header > .collapsible-header{
 }
 
 #dashboard {
-    /* transform-origin: bottom center; */
-    transform: translateY(12px) scale(0.9);
-    transition: transform 0.5s;
+    transform: none;
 }
 
 .border-gradient{
