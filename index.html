@@ -267,122 +267,42 @@
                     </p>
                 </div>
 <!--ALPHA PROTOTYPE SECTION-->
-<div class="tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-6">
-    <h3 class="tw-text-3xl tw-font-medium tw-text-gray-200">Alpha Prototype</h3>
-    <p class="tw-mt-4 tw-text-gray-300">
-        The Alpha Prototype displayed our initial proof of concept for the GOS.
-    </p>
+<div class="tw-grid tw-grid-cols-2 max-md:tw-grid-cols-1 tw-gap-6 tw-w-full tw-max-w-4xl tw-mx-auto">
 
-    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
-        <div>
-            <h4 class="tw-text-xl tw-font-medium">
-                <i class="bi bi-check-all !tw-text-2xl tw-text-[#27F5D3]"></i>
-                Gear-driven yaw validation
-            </h4>
-            <span class="tw-text-gray-300">
-                Verified rotational motion through the gear system.
-            </span>
-        </div>
-
-        <div>
-            <h4 class="tw-text-xl tw-font-medium">
-                <i class="bi bi-check-all !tw-text-2xl tw-text-[#27F5D3]"></i>
-                Mechanical structure testing
-            </h4>
-            <span class="tw-text-gray-300">
-                Confirmed basic gimbal structure and alignment.
-            </span>
-        </div>
-
-        <div>
-            <h4 class="tw-text-xl tw-font-medium">
-                <i class="bi bi-check-all !tw-text-2xl tw-text-[#27F5D3]"></i>
-                Early detection capability
-            </h4>
-            <span class="tw-text-gray-300">
-                Achieved initial object detection with limited accuracy.
-            </span>
-        </div>
-
-        <div>
-            <h4 class="tw-text-xl tw-font-medium">
-                <i class="bi bi-check-all !tw-text-2xl tw-text-[#27F5D3]"></i>
-                Identified system limitations
-            </h4>
-            <span class="tw-text-gray-300">
-                Observed issues in stability, precision, and tracking.
-            </span>
-        </div>
-    </div>
-
-    <div class="tw-mt-6 tw-overflow-hidden tw-rounded-lg tw-border tw-border-outlineColor tw-bg-black/20">
-        <video
-            class="tw-h-full tw-w-full tw-object-cover"
-            controls
-            playsinline
-            preload="metadata"
-        >
-            <source src="./assets/videos/alphavid1.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
+    <!-- Alpha Video -->
+    <div class="tw-col-span-2">
+        <video controls class="tw-w-full tw-rounded-lg tw-shadow-lg">
+            <source src="./assets/alpha1.mp4" type="video/mp4">
         </video>
-        <div class="tw-p-3 tw-text-sm tw-text-gray-300">
-            Alpha testing clip showing the early motion setup and validation.
-        </div>
+        <p class="tw-text-center tw-text-sm tw-mt-2">
+            Alpha testing video demonstrating early tracking behavior
+        </p>
     </div>
 
-    <div class="tw-mt-6 tw-grid tw-grid-cols-1 tw-gap-4 md:tw-grid-cols-2">
-        <figure class="tw-overflow-hidden tw-rounded-md tw-border tw-border-outlineColor tw-bg-black/20">
-            <div style="height: 170px;">
-                <img
-                    src="./assets/images/home/alpha1.png"
-                    alt="Mechanical frame used during alpha testing"
-                    class="tw-h-full tw-w-full tw-object-contain tw-p-2"
-                />
-            </div>
-            <figcaption class="tw-border-t tw-border-outlineColor tw-p-3 tw-text-sm tw-text-gray-300">
-                Mechanical frame
-            </figcaption>
-        </figure>
-
-        <figure class="tw-overflow-hidden tw-rounded-md tw-border tw-border-outlineColor tw-bg-black/20">
-            <div style="height: 170px;">
-                <img
-                    src="./assets/images/home/alpha2.jpg"
-                    alt="Camera mounted on a stand for alpha testing"
-                    class="tw-h-full tw-w-full tw-object-contain tw-p-2"
-                />
-            </div>
-            <figcaption class="tw-border-t tw-border-outlineColor tw-p-3 tw-text-sm tw-text-gray-300">
-                Camera stand setup
-            </figcaption>
-        </figure>
-
-        <figure class="tw-overflow-hidden tw-rounded-md tw-border tw-border-outlineColor tw-bg-black/20">
-            <div style="height: 170px;">
-                <img
-                    src="./assets/images/home/alpha3.jpg"
-                    alt="Motor connected to a DC power supply during alpha testing"
-                    class="tw-h-full tw-w-full tw-object-contain tw-p-2"
-                />
-            </div>
-            <figcaption class="tw-border-t tw-border-outlineColor tw-p-3 tw-text-sm tw-text-gray-300">
-                Motor power validation
-            </figcaption>
-        </figure>
-
-        <figure class="tw-overflow-hidden tw-rounded-md tw-border tw-border-outlineColor tw-bg-black/20">
-            <div style="height: 170px;">
-                <img
-                    src="./assets/images/home/alpha4.png"
-                    alt="Disk detection screenshot showing frisbee tracking during alpha testing"
-                    class="tw-h-full tw-w-full tw-object-contain tw-p-2"
-                />
-            </div>
-            <figcaption class="tw-border-t tw-border-outlineColor tw-p-3 tw-text-sm tw-text-gray-300">
-                Disk detection output
-            </figcaption>
-        </figure>
+    <!-- Image 1 -->
+    <div>
+        <img src="./assets/images/home/alpha1.png" class="tw-w-full tw-rounded-lg">
+        <p class="tw-text-center tw-text-sm tw-mt-2">Mechanical frame</p>
     </div>
+
+    <!-- Image 2 -->
+    <div>
+        <img src="./assets/images/home/alpha2.jpg" class="tw-w-full tw-rounded-lg">
+        <p class="tw-text-center tw-text-sm tw-mt-2">Camera test setup</p>
+    </div>
+
+    <!-- Image 3 -->
+    <div>
+        <img src="./assets/images/home/alpha3.jpg" class="tw-w-full tw-rounded-lg">
+        <p class="tw-text-center tw-text-sm tw-mt-2">Motor powered via DC supply</p>
+    </div>
+
+    <!-- Image 4 -->
+    <div>
+        <img src="./assets/images/home/alpha4.png" class="tw-w-full tw-rounded-lg">
+        <p class="tw-text-center tw-text-sm tw-mt-2">Disk detection output</p>
+    </div>
+
 </div>
         <!--BETA PROTOTYPE SECTION-->
         <div class="tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-6">
