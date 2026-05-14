@@ -50,7 +50,7 @@
                 <img
                     src="./assets/logo/logo.png"
                     alt="GOS logo"
-                    class="tw-h-full tw-w-full tw-object-contain"
+                    class="tw-h-full tw-w-full tw-object-contain tw-max-h-[320px]"
                 />
             </a>
             <div
@@ -65,7 +65,6 @@
                     <a class="header-links" href="#final-prototype"> Final Prototype </a>
                     <a class="header-links" href="#earlier-prototypes"> Earlier Prototypes </a>
                     <a class="header-links" href="#features"> Features </a>
-                    <a class="header-links" href="#gallery"> Media </a>
                     <a class="header-links" href="#team"> Team </a>
                 </div>
                 <div
@@ -193,7 +192,7 @@
         >
             <div class="tw-mt-4 tw-flex tw-w-full tw-flex-col tw-place-items-center tw-gap-4">
                 <div class="reveal-up tw-text-center tw-text-2xl tw-font-medium tw-text-gray-200 max-md:tw-text-xl">
-                    Project sponsorship provided by Siemens
+                    Project supported by Siemens
                 </div>
                 <div class="reveal-up tw-max-w-[720px] tw-text-center tw-text-gray-300">
                     Their support helps us build, test, and refine the prototype.
@@ -202,7 +201,7 @@
                     <img
                         src="./assets/images/siemenslogo.png"
                         alt="Siemens logo"
-                        class="tw-h-auto tw-w-[200px] tw-object-contain"
+                        class="tw-h-auto tw-w-[180px] tw-object-contain"
                     />
                 </div>
             </div>
@@ -213,14 +212,13 @@
             class="tw-relative tw-flex tw-min-h-[80vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
             id="final-prototype"
         >
-        <!--change this image to an image of the final prototype-->
-            <div class="reveal-up tw-flex tw-min-h-[60vh] tw-place-content-center tw-place-items-center tw-gap-[10%] max-lg:tw-flex-col max-lg:tw-gap-10">
+        <div class="reveal-up tw-flex tw-min-h-[60vh] tw-place-content-center tw-place-items-center tw-gap-[10%] max-lg:tw-flex-col max-lg:tw-gap-10">
                 <div class="tw-flex">
-                    <div class="tw-max-h-[650px] tw-max-w-[850px] tw-overflow-hidden tw-rounded-lg">                        
+                    <div class="tw-max-h-[300px] tw-max-w-[420px] tw-overflow-hidden tw-rounded-lg">                        
                         <img
                             src="./assets/images/home/full_scale_testing.png"
                             alt="final prototype image"
-                            class="tw-h-full tw-w-full tw-object-cover"
+                            class="tw-h-full tw-w-full tw-object-contain tw-max-h-[320px]"
                         />
                     </div>
                 </div>
@@ -229,7 +227,7 @@
                         Final Prototype
                     </h3>
 
-                    <!--change description for these-->
+                    
                     <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
                         <h4 class="tw-text-xl tw-font-medium">
                             <i class="bi bi-check-all !tw-text-2xl"></i>
@@ -267,45 +265,110 @@
                     </p>
                 </div>
 <!--ALPHA PROTOTYPE SECTION-->
-<div class="tw-grid tw-grid-cols-2 max-md:tw-grid-cols-1 tw-gap-6 tw-w-full tw-max-w-4xl tw-mx-auto">
+<div class="tw-mx-auto tw-w-full tw-max-w-[1200px] tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-6">
+    <h3 class="tw-text-3xl tw-font-medium tw-text-gray-200">Alpha Prototype</h3>
+    <p class="tw-mt-4 tw-text-gray-300">
+        The Alpha Prototype displayed our initial proof of concept for the GOS.
+    </p>
 
-    <!-- Alpha Video -->
-    <div class="tw-col-span-2">
-        <video controls class="tw-w-full tw-rounded-lg tw-shadow-lg">
-            <source src="./assets/alpha1.mp4" type="video/mp4">
-        </video>
-        <p class="tw-text-center tw-text-sm tw-mt-2">
-            Alpha testing video demonstrating early tracking behavior
-        </p>
+    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+        <div>
+            <h4 class="tw-text-xl tw-font-medium">
+                <i class="bi bi-check-all !tw-text-2xl tw-text-[#27F5D3]"></i>
+                Gear-driven yaw validation
+            </h4>
+            <span class="tw-text-gray-300">
+                Verified rotational motion through the gear system.
+            </span>
+        </div>
+
+        <div>
+            <h4 class="tw-text-xl tw-font-medium">
+                <i class="bi bi-check-all !tw-text-2xl tw-text-[#27F5D3]"></i>
+                Mechanical structure testing
+            </h4>
+            <span class="tw-text-gray-300">
+                Confirmed basic gimbal structure and alignment.
+            </span>
+        </div>
+
+        <div>
+            <h4 class="tw-text-xl tw-font-medium">
+                <i class="bi bi-check-all !tw-text-2xl tw-text-[#27F5D3]"></i>
+                Early detection capability
+            </h4>
+            <span class="tw-text-gray-300">
+                Achieved initial object detection with limited accuracy.
+            </span>
+        </div>
+
+        <div>
+            <h4 class="tw-text-xl tw-font-medium">
+                <i class="bi bi-check-all !tw-text-2xl tw-text-[#27F5D3]"></i>
+                Identified system limitations
+            </h4>
+            <span class="tw-text-gray-300">
+                Observed issues in stability, precision, and tracking.
+            </span>
+        </div>
     </div>
 
-    <!-- Image 1 -->
-    <div>
-        <img src="./assets/images/home/alpha1.png" class="tw-w-full tw-rounded-lg">
-        <p class="tw-text-center tw-text-sm tw-mt-2">Mechanical frame</p>
-    </div>
+    <div class="tw-mt-6 tw-grid tw-grid-cols-1 tw-gap-6 md:tw-grid-cols-2">
+        <figure class="tw-overflow-hidden tw-rounded-md tw-border tw-border-outlineColor tw-bg-black/20">
+            <div style="height: 170px;">
+                <img
+                    src="./assets/images/home/alpha1.png"
+                    alt="Mechanical frame used during alpha testing"
+                    class="tw-h-full tw-w-full tw-object-contain tw-p-3"
+                />
+            </div>
+            <figcaption class="tw-border-t tw-border-outlineColor tw-p-3 tw-text-center tw-text-sm tw-text-gray-300">
+                Mechanical frame
+            </figcaption>
+        </figure>
 
-    <!-- Image 2 -->
-    <div>
-        <img src="./assets/images/home/alpha2.jpg" class="tw-w-full tw-rounded-lg">
-        <p class="tw-text-center tw-text-sm tw-mt-2">Camera test setup</p>
-    </div>
+        <figure class="tw-overflow-hidden tw-rounded-md tw-border tw-border-outlineColor tw-bg-black/20">
+            <div style="height: 170px;">
+                <img
+                    src="./assets/images/home/alpha2.jpg"
+                    alt="Camera mounted on a stand for alpha testing"
+                    class="tw-h-full tw-w-full tw-object-contain tw-p-3"
+                />
+            </div>
+            <figcaption class="tw-border-t tw-border-outlineColor tw-p-3 tw-text-center tw-text-sm tw-text-gray-300">
+                Camera stand setup
+            </figcaption>
+        </figure>
 
-    <!-- Image 3 -->
-    <div>
-        <img src="./assets/images/home/alpha3.jpg" class="tw-w-full tw-rounded-lg">
-        <p class="tw-text-center tw-text-sm tw-mt-2">Motor powered via DC supply</p>
-    </div>
+        <figure class="tw-overflow-hidden tw-rounded-md tw-border tw-border-outlineColor tw-bg-black/20">
+            <div style="height: 170px;">
+                <img
+                    src="./assets/images/home/alpha3.jpg"
+                    alt="Motor connected to a DC power supply during alpha testing"
+                    class="tw-h-full tw-w-full tw-object-contain tw-p-3"
+                />
+            </div>
+            <figcaption class="tw-border-t tw-border-outlineColor tw-p-3 tw-text-center tw-text-sm tw-text-gray-300">
+                Motor power validation
+            </figcaption>
+        </figure>
 
-    <!-- Image 4 -->
-    <div>
-        <img src="./assets/images/home/alpha4.png" class="tw-w-full tw-rounded-lg">
-        <p class="tw-text-center tw-text-sm tw-mt-2">Disk detection output</p>
+        <figure class="tw-overflow-hidden tw-rounded-md tw-border tw-border-outlineColor tw-bg-black/20">
+            <div style="height: 170px;">
+                <img
+                    src="./assets/images/home/alpha4.png"
+                    alt="Disk detection screenshot showing frisbee tracking during alpha testing"
+                    class="tw-h-full tw-w-full tw-object-contain tw-p-3"
+                />
+            </div>
+            <figcaption class="tw-border-t tw-border-outlineColor tw-p-3 tw-text-center tw-text-sm tw-text-gray-300">
+                Disk detection output
+            </figcaption>
+        </figure>
     </div>
-
 </div>
         <!--BETA PROTOTYPE SECTION-->
-        <div class="tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-6">
+        <div class="tw-mx-auto tw-w-full tw-max-w-[1200px] tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-6">
             <h3 class="tw-text-3xl tw-font-medium tw-text-gray-200">Beta Prototype</h3>
 
             <p class="tw-mt-4 tw-text-gray-300">
@@ -362,32 +425,16 @@
                 </div>
             </div>
 
-            <div class="tw-mt-6 tw-grid tw-grid-cols-1 tw-gap-4 lg:tw-grid-cols-2">
-                <div class="tw-overflow-hidden tw-rounded-lg tw-border tw-border-outlineColor tw-bg-black/20">
-                    <video
-                        class="tw-h-full tw-w-full tw-object-cover"
-                        controls
-                        playsinline
-                        preload="metadata"
-                    >
-                        <source src="./assets/videos/betavid1.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="tw-p-3 tw-text-sm tw-text-gray-300">
-                        Beta testing clip showing integrated motion and system behavior.
-                    </div>
-                </div>
-
-                <div class="tw-grid tw-grid-cols-1 tw-gap-4">
+            <div class="tw-grid tw-grid-cols-1 tw-gap-6 md:tw-grid-cols-2">
                     <figure class="tw-overflow-hidden tw-rounded-md tw-border tw-border-outlineColor tw-bg-black/20">
                         <div style="height: 170px;">
                             <img
                                 src="./assets/images/home/gos_beta.png"
                                 alt="Beta prototype view 1"
-                                class="tw-h-full tw-w-full tw-object-contain tw-p-2"
+                                class="tw-h-full tw-w-full tw-object-contain tw-p-3"
                             />
                         </div>
-                        <figcaption class="tw-border-t tw-border-outlineColor tw-p-3 tw-text-sm tw-text-gray-300">
+                        <figcaption class="tw-border-t tw-border-outlineColor tw-p-3 tw-text-center tw-text-sm tw-text-gray-300">
                             Beta prototype view
                         </figcaption>
                     </figure>
@@ -397,10 +444,10 @@
                             <img
                                 src="./assets/images/home/gos_beta_2.png"
                                 alt="Beta prototype view 2"
-                                class="tw-h-full tw-w-full tw-object-contain tw-p-2"
+                                class="tw-h-full tw-w-full tw-object-contain tw-p-3"
                             />
                         </div>
-                        <figcaption class="tw-border-t tw-border-outlineColor tw-p-3 tw-text-sm tw-text-gray-300">
+                        <figcaption class="tw-border-t tw-border-outlineColor tw-p-3 tw-text-center tw-text-sm tw-text-gray-300">
                             Beta prototype side view
                         </figcaption>
                     </figure>
@@ -466,51 +513,6 @@
                                 view stable.
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section
-            class="tw-relative tw-flex tw-min-h-[80vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
-            id="gallery"
-        >
-            <div class="tw-mt-8 tw-flex tw-w-full tw-flex-col tw-place-items-center tw-gap-5">
-                <div class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center">
-                    <h2 class="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-3xl">
-                        Field Testing
-                    </h2>
-                    <p class="tw-max-w-[900px] tw-text-gray-300">
-                        Selected clips from field testing, prototype validation, and full-scale demonstrations.
-                    </p>
-                </div>
-
-                <div class="tw-mt-6 tw-grid tw-w-full tw-max-w-[1200px] tw-grid-cols-1 tw-gap-6 xl:tw-grid-cols-3">
-                    <div class="tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 xl:tw-col-span-2">
-                        <div class="tw-overflow-hidden tw-rounded-md tw-border tw-border-outlineColor tw-bg-black/20">
-                            <video
-                                class="tw-h-full tw-w-full tw-object-cover"
-                                controls
-                                playsinline
-                                preload="metadata"
-                            >
-                                <source src="./assets/videos/fullscaledronevid.mp4" type="video/mp4" />
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <div class="tw-mt-3 tw-text-gray-300">
-                            Full-scale drone footage showing the frisbee path, the river crossing, and the testing area.
-                        </div>
-                    </div>
-
-                    <div class="tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4">
-                        <h3 class="tw-text-2xl tw-font-medium tw-text-gray-200">Why this section works</h3>
-                        <p class="tw-mt-3 tw-text-gray-300">
-                            This clip gives the page movement and context, while the alpha and beta videos stay inside their respective prototype sections where they make the most sense.
-                        </p>
-                        <p class="tw-mt-3 tw-text-gray-300">
-                            If you ever want a lighter homepage, this section is also the easiest place to swap in a still image later.
-                        </p>
                     </div>
                 </div>
             </div>
@@ -650,12 +652,11 @@
 
                 <div class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]">
                     <div class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg">
-                        <span>What should visitors expect here?</span>
+                        <span>How was the system tested?</span>
                         <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
                     </div>
                     <div class="content">
-                        A project overview, prototype photos, team information, and development
-                        progress.
+                        The prototype was evaluated through staged alpha and beta testing, followed by final-scale demonstrations and design reviews.
                     </div>
                 </div>
             </div>
@@ -702,9 +703,8 @@
                     <a href="#overview" class="footer-link">Overview</a>
                     <a href="#mission" class="footer-link">Mission</a>
                     <a href="#final-prototype" class="footer-link">Final Prototype</a>
-                    <a href="#earlier-prototypes" class="footer-link">Earlier Prototypes</a>
                     <a href="#features" class="footer-link">Features</a>
-                    <a href="#gallery" class="footer-link">Media</a>
+                    <a href="#earlier-prototypes" class="footer-link">Earlier Prototypes</a>
                     <a href="#team" class="footer-link">Team</a>
                 </div>
             </div>
